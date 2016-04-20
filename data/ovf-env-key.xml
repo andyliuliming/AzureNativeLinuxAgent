@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Environment xmlns="http://schemas.dmtf.org/ovf/environment/1" 
+             xmlns:oe="http://schemas.dmtf.org/ovf/environment/1" 
+             xmlns:wa="http://schemas.microsoft.com/windowsazure" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <wa:ProvisioningSection>
+    <wa:Version>1.0</wa:Version>
+    <LinuxProvisioningConfigurationSet xmlns="http://schemas.microsoft.com/windowsazure" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+      <ConfigurationSetType>LinuxProvisioningConfiguration</ConfigurationSetType>
+      <HostName>andliu-bsd</HostName>
+      <UserName>andy9</UserName>
+      <DisableSshPasswordAuthentication>true</DisableSshPasswordAuthentication>
+      <SSH>
+        <PublicKeys>
+          <PublicKey>
+            <Fingerprint>6E5EEDF9A1D98E3234D5FDD2034B24726AC529FF</Fingerprint>
+            <Path>/home/andy9/.ssh/authorized_keys</Path>
+          </PublicKey>
+        </PublicKeys>
+      </SSH>
+    </LinuxProvisioningConfigurationSet>
+  </wa:ProvisioningSection>
+
+  <wa:PlatformSettingsSection>
+    <wa:Version>1.0</wa:Version>
+    <PlatformSettings xmlns="http://schemas.microsoft.com/windowsazure" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+      <KmsServerHostname>kms.core.windows.net</KmsServerHostname>
+      <ProvisionGuestAgent>true</ProvisionGuestAgent>
+      <GuestAgentPackageName>Win7_Win8_IaaS_rd_art_stable_150912-1548_GuestAgentPackage.zip</GuestAgentPackageName>
+      <UseAVMA>false</UseAVMA>
+    </PlatformSettings>
+  </wa:PlatformSettingsSection>
+</Environment>

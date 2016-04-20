@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{58208F66-A7A6-4F59-A641-6C9A4D43B30E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AzureNativeLinuxAgent</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Personal\cygwin\usr\include\json-c;C:\Personal\cygwin\usr\include\libxml2;C:\Personal\cygwin\usr\include\json-glib-1.0;C:\Personal\cygwin\usr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="src\AbstractDistro.h" />
+    <ClInclude Include="src\AgentConfig.h" />
+    <ClInclude Include="src\AzureEnvironment.h" />
+    <ClInclude Include="src\BlobRoutine.h" />
+    <ClInclude Include="src\Certificates.h" />
+    <ClInclude Include="src\CertificationRoutine.h" />
+    <ClInclude Include="src\CommandExecuter.h" />
+    <ClInclude Include="src\CommandResult.h" />
+    <ClInclude Include="src\Deprovisioner.h" />
+    <ClInclude Include="src\DeviceRoutine.h" />
+    <ClInclude Include="src\ExtensionConfig.h" />
+    <ClInclude Include="src\ExtensionsConfig.h" />
+    <ClInclude Include="src\FileOperator.h" />
+    <ClInclude Include="src\GoalState.h" />
+    <ClInclude Include="src\HandlerManifest.h" />
+    <ClInclude Include="src\HostingEnvironmentConfig.h" />
+    <ClInclude Include="src\HttpRoutine.h" />
+    <ClInclude Include="src\JsonRoutine.h" />
+    <ClInclude Include="src\Logger.h" />
+    <ClInclude Include="src\Macros.h" />
+    <ClInclude Include="src\NetworkRoutine.h" />
+    <ClInclude Include="src\OvfEnv.h" />
+    <ClInclude Include="src\Provisioner.h" />
+    <ClInclude Include="src\SharedConfig.h" />
+    <ClInclude Include="src\SocketWrapper.h" />
+    <ClInclude Include="src\StatusReporter.h" />
+    <ClInclude Include="src\StringUtil.h" />
+    <ClInclude Include="src\UserManager.h" />
+    <ClInclude Include="src\XmlRoutine.h" />
+    <ClInclude Include="src\ZipRoutine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AbstractDistro.cpp" />
+    <ClCompile Include="src\AgentConfig.cpp" />
+    <ClCompile Include="src\AzureEnvironment.cpp" />
+    <ClCompile Include="src\AzureNativeLinuxAgent.cpp" />
+    <ClCompile Include="src\BlobRoutine.cpp" />
+    <ClCompile Include="src\Certificates.cpp" />
+    <ClCompile Include="src\CertificationRoutine.cpp" />
+    <ClCompile Include="src\CommandExecuter.cpp" />
+    <ClCompile Include="src\CommandResult.cpp" />
+    <ClCompile Include="src\Deprovisioner.cpp" />
+    <ClCompile Include="src\DeviceRoutine.cpp" />
+    <ClCompile Include="src\ExtensionConfig.cpp" />
+    <ClCompile Include="src\ExtensionsConfig.cpp" />
+    <ClCompile Include="src\FileOperator.cpp" />
+    <ClCompile Include="src\GoalState.cpp" />
+    <ClCompile Include="src\HandlerManifest.cpp" />
+    <ClCompile Include="src\HostingEnvironmentConfig.cpp" />
+    <ClCompile Include="src\HttpResponse.cpp" />
+    <ClCompile Include="src\HttpRoutine.cpp" />
+    <ClCompile Include="src\JsonRoutine.cpp" />
+    <ClCompile Include="src\Logger.cpp" />
+    <ClCompile Include="src\NetworkRoutine.cpp" />
+    <ClCompile Include="src\OvfEnv.cpp" />
+    <ClCompile Include="src\Provisioner.cpp" />
+    <ClCompile Include="src\SharedConfig.cpp" />
+    <ClCompile Include="src\SocketWrapper.cpp" />
+    <ClCompile Include="src\StatusReporter.cpp" />
+    <ClCompile Include="src\StringUtil.cpp" />
+    <ClCompile Include="src\UserManager.cpp" />
+    <ClCompile Include="src\XmlRoutine.cpp" />
+    <ClCompile Include="src\ZipRoutine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="aclocal.m4" />
+    <None Include="AUTHORS" />
+    <None Include="C:\Users\andliu\Documents\GitHub\WALinuxAgent\config\waagent.conf" />
+    <None Include="configure" />
+    <None Include="configure.ac" />
+    <None Include="configure.scan" />
+    <None Include="COPYING" />
+    <None Include="data\waagent_native.conf" />
+    <None Include="INSTALL" />
+    <None Include="Makefile" />
+    <None Include="Makefile.am" />
+    <None Include="Makefile.in" />
+    <None Include="NEWS" />
+    <None Include="README" />
+    <None Include="README.md" />
+    <None Include="src\Makefile" />
+    <None Include="src\Makefile.am" />
+    <None Include="src\Makefile.in" />
+    <None Include="wala_task.conf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="data\ExtensionConfig.1.xml" />
+    <Xml Include="data\GoalState.1.xml" />
+    <Xml Include="data\HostingEnvironmentConfig.xml" />
+    <Xml Include="data\ovf-env-key.xml" />
+    <Xml Include="data\ovf-env.xml" />
+    <Xml Include="data\ShareConfig.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

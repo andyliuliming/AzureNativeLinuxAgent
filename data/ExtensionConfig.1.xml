@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>^M
+<Extensions version="1.0.0.0" goalStateIncarnation="1">
+  <GuestAgentExtension xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <GAFamilies>
+      <GAFamily>
+        <Name>Prod</Name>
+        <Uris>
+          <Uri>http://rdfepirv2ch1prdstr05.blob.core.windows.net/7d89d439b79f4452950452399add2c90/Microsoft.OSTCLinuxAgent_Prod_usnorth_manifest.xml</Uri>
+          <Uri>http://rdfepirv2ch3prdstr01.blob.core.windows.net/7d89d439b79f4452950452399add2c90/Microsoft.OSTCLinuxAgent_Prod_usnorth_manifest.xml</Uri>
+          <Uri>http://rdfepirv2ch3prdstr03.blob.core.windows.net/7d89d439b79f4452950452399add2c90/Microsoft.OSTCLinuxAgent_Prod_usnorth_manifest.xml</Uri>
+          <Uri>http://zrdfepirv2ch3prdstr06.blob.core.windows.net/7d89d439b79f4452950452399add2c90/Microsoft.OSTCLinuxAgent_Prod_usnorth_manifest.xml</Uri>
+        </Uris>
+      </GAFamily>
+      <GAFamily>
+        <Name>Test</Name>
+        <Uris>
+          <Uri>http://rdfepirv2ch1prdstr05.blob.core.windows.net/7d89d439b79f4452950452399add2c90/Microsoft.OSTCLinuxAgent_Test_usnorth_manifest.xml</Uri>
+          <Uri>http://rdfepirv2ch3prdstr01.blob.core.windows.net/7d89d439b79f4452950452399add2c90/Microsoft.OSTCLinuxAgent_Test_usnorth_manifest.xml</Uri>
+          <Uri>http://rdfepirv2ch3prdstr03.blob.core.windows.net/7d89d439b79f4452950452399add2c90/Microsoft.OSTCLinuxAgent_Test_usnorth_manifest.xml</Uri>
+          <Uri>http://zrdfepirv2ch3prdstr06.blob.core.windows.net/7d89d439b79f4452950452399add2c90/Microsoft.OSTCLinuxAgent_Test_usnorth_manifest.xml</Uri>
+        </Uris>
+      </GAFamily>
+    </GAFamilies>
+    <Location>northcentralus</Location>
+    <ServiceName>CRP</ServiceName>
+  </GuestAgentExtension>
+  <StatusUploadBlob statusBlobType="BlockBlob">https://andliuresourcegroup24211.blob.core.windows.net/vhds/andliu-ubuntuencryption.0fbad6d4-064c-4dd9-9d7e-0a6ed9b79007.status?sv=2014-02-14&amp;sr=b&amp;sig=Z%2F0%2BR%2BL7ZIPXdIRYPYoTDnTMS%2BxzS9H50ZXlqjhjaWQ%3D&amp;se=9999-01-01T00%3A00%3A00Z&amp;sp=rw</StatusUploadBlob>
+</Extensions>

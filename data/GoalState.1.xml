@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GoalState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="goalstate10.xsd">
+  <Version>2012-11-30</Version>
+  <Incarnation>1</Incarnation>
+  <Machine>
+    <ExpectedState>Started</ExpectedState>
+    <StopRolesDeadlineHint>300000</StopRolesDeadlineHint>
+    <LBProbePorts>
+      <Port>16001</Port>
+    </LBProbePorts>
+    <ExpectHealthReport>FALSE</ExpectHealthReport>
+  </Machine>
+  <Container>
+    <ContainerId>8d102452-ec83-4069-ab8e-65d03a7b4291</ContainerId>
+    <RoleInstanceList>
+      <RoleInstance>
+        <InstanceId>4d2e2889-efd1-4868-a781-a82196c9c9e5._andliu-ubuntuencryption</InstanceId>
+        <State>Started</State>
+        <Configuration>
+          <HostingEnvironmentConfig>http://168.63.129.16:80/machine/8d102452-ec83-4069-ab8e-65d03a7b4291/4d2e2889%2Defd1%2D4868%2Da781%2Da82196c9c9e5.%5Fandliu%2Dubuntuencryption?comp=config&amp;type=hostingEnvironmentConfig&amp;incarnation=1</HostingEnvironmentConfig>
+          <SharedConfig>http://168.63.129.16:80/machine/8d102452-ec83-4069-ab8e-65d03a7b4291/4d2e2889%2Defd1%2D4868%2Da781%2Da82196c9c9e5.%5Fandliu%2Dubuntuencryption?comp=config&amp;type=sharedConfig&amp;incarnation=1</SharedConfig>
+          <ExtensionsConfig>http://168.63.129.16:80/machine/8d102452-ec83-4069-ab8e-65d03a7b4291/4d2e2889%2Defd1%2D4868%2Da781%2Da82196c9c9e5.%5Fandliu%2Dubuntuencryption?comp=config&amp;type=extensionsConfig&amp;incarnation=1</ExtensionsConfig>
+          <FullConfig>http://168.63.129.16:80/machine/8d102452-ec83-4069-ab8e-65d03a7b4291/4d2e2889%2Defd1%2D4868%2Da781%2Da82196c9c9e5.%5Fandliu%2Dubuntuencryption?comp=config&amp;type=fullConfig&amp;incarnation=1</FullConfig>
+          <ConfigName>4d2e2889-efd1-4868-a781-a82196c9c9e5.0.4d2e2889-efd1-4868-a781-a82196c9c9e5.0._andliu-ubuntuencryption.1.xml</ConfigName>
+        </Configuration>
+      </RoleInstance>
+    </RoleInstanceList>
+  </Container>
+</GoalState>

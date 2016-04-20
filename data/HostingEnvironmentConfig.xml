@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HostingEnvironmentConfig version="1.0.0.0" goalStateIncarnation="4">
+  <StoredCertificates>
+    <StoredCertificate name="TenantEncryptionCert" certificateId="sha1:080B039BD96D14717D973DAA9E5E44D12BF74A21" storeName="My" configurationLevel="System" />
+  </StoredCertificates>
+  <Deployment name="4d2e2889-efd1-4868-a781-a82196c9c9e5" guid="{0674ba7a-b863-4a76-9286-d7ea673e459a}" incarnation="3" isNonCancellableTopologyChangeEnabled="false">
+    <Service name="__andliu-ubuntuencryptionService" guid="{00000000-0000-0000-0000-000000000000}" />
+    <ServiceInstance name="4d2e2889-efd1-4868-a781-a82196c9c9e5.3" guid="{6e29db06-fcf7-4fe1-bfb5-30c8a4e41247}" />
+  </Deployment>
+  <Incarnation number="1" instance="_andliu-ubuntuencryption" guid="{b7a65292-6966-48f2-9c30-f9fa05d2c717}" />
+  <Role guid="{e29cf67f-2eab-d11f-41c5-85d53c858554}" name="_andliu-ubuntuencryption" hostingEnvironmentVersion="1" software="" softwareType="ApplicationPackage" entryPoint="" parameters="" />
+  <HostingEnvironmentSettings name="full" Runtime="rd_fabric_stable_dhf5.150807-2320.RuntimePackage_1.0.0.14.zip">
+    <CAS mode="full" />
+    <PrivilegeLevel mode="max" />
+    <AdditionalProperties>
+      <CgiHandlers></CgiHandlers>
+    </AdditionalProperties>
+  </HostingEnvironmentSettings>
+  <ApplicationSettings>
+    <Setting name="ProvisionCertificate|TenantEncryptionCert" value="sha1:080B039BD96D14717D973DAA9E5E44D12BF74A21" />
+  </ApplicationSettings>
+</HostingEnvironmentConfig>
